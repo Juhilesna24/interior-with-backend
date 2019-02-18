@@ -1,0 +1,60 @@
+<html lang="en">
+ <head>
+   <link rel="stylesheet" href="design.css"/>
+   </head>
+   <body>
+   <div class="imgslide">
+     <img class="slides" src="paint2.jpg"/>
+	 <img class="slides" src="paint3.jpg"/>
+	 <img class="slides" src="paint4.jpg"/>
+	 <img class="slides" src="paint5.jpg"/>
+	 <img class="slides" src="paint6.jpg"/>
+	 <img class="slides" src="paint7.jpg"/>
+	 <img class="slides" src="paint8.jpg"/>
+	 <img class="slides" src="paint9.jpg"/>
+	 <img class="slides" src="paint10.jpg"/>
+	 <img class="slides" src="paint1.jpg"/>
+	 <img class="slides" src="water.jpg"/>
+	 <button class="imgbt" onclick="plusIndex(-1)" id="imgbt1">&#10094;</button>
+	 <button class="imgbt" onclick="plusIndex(1)" id="imgbt2">&#10095;</button>
+	 
+   </div>
+   <script>
+    var index=1;
+	
+	function plusIndex(n){
+	index = index + n;
+	showImage(index);
+	}
+	showImage(1);
+	function showImage(n){
+	   var i;
+	   
+	   var x = document.getElementsByClassName("slides");
+	   if(n > x.length){ index = 1};
+	   if(n < 1){ index = x.length};
+	   for(i=0;i<x.length;i++)
+	   {
+	   x[i].style.display="none";
+	   }
+	   x[index-1].style.display="block";
+	   }
+	   autoSlide();
+	   function autoSlide(){
+	     var i;
+	   
+	   var x = document.getElementsByClassName("slides");
+	    for(i=0;i<x.length;i++)
+	   {
+	   x[i].style.display="none";
+	   }
+	   if(index > x.length){index = 1}
+	   x[index-1].style.display="block";
+	   index++;
+	     setTimeout(autoSlide, 2000);
+		 
+	   }
+	   </script>
+      </body>
+	  
+	  </html>

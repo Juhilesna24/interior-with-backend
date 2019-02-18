@@ -1,0 +1,138 @@
+*{
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background: black;
+}
+.percent-count {
+	width: 450px;
+	height: 50px;
+	margin: 70px auto;
+	font-size: 100px;
+	text-align: center;
+	color: #fff;
+	font-family: forte;
+}
+.view{
+	margin-top: 120px;
+    position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 20%;
+	
+}
+.progress-bar{
+	width: 506px;
+	height:5px;
+	background-color: #fff;
+	border-radius: 13px;
+	margin:170px auto;
+	
+}
+.progress{
+	width: 506px;
+	height:5px;
+	margin-top: 300dp;
+	border-radius: 13px;
+	background-color: #ffd700;
+}
+.view1{
+	margin-top: 150dp;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+}
+path {
+	stroke: #fff;
+	fill: #fff;
+	stroke-dasharray: 1000;
+	opacity: 10;
+	animation: animate 3s cubic-bezier(0,0.23,1,.1);
+}
+@keyframes animate {
+    0% {
+      opacity: 0;
+      fill: none;
+      stroke-dashoffset: 1000;
+	}
+    30% {
+      opacity: 10;
+      fill: none;
+      stroke-dashoffset: 1000;
+    }
+    90%{
+      fill: rgba(255,255,255,0);
+	}
+    100% {
+       opacity: 10;
+       fill: rgba(255,255,255,1);
+       stroke-dashoffset: 0;
+	}
+}
+.view2{
+	margin-top: 100px;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+}
+.container{
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+
+	
+}	
+.btn1{
+	border: 1px solid #ffd700;
+	background: none;
+	padding: 10px 20px;
+	font-size: 20px;
+	font-family: "cursive";
+	cursor: pointer;
+	margin: 0;
+	transition: 0.8s;
+	overflow: hidden;
+	position: relative;
+	color: #ffd700;
+
+}	
+
+.btn1:hover{
+	
+	
+	background: #ffd700;
+	
+}
+a{
+	text-decoration: none;
+	color: #ffd700;
+}
+a:hover {
+	color: #000;
+}
+#fillpage{
+	height: 100vh;
+}
+#fillpage section: nth-child(1) {
+	
+	background: #f00;
+}
+#fillpage section: nth-child(2) {
+	
+	background: #f00;
+}
+#fillpage section: nth-child(3) {
+	
+	background: #f00;
+}
+#fillpage section: nth-child(4) {
+	
+	background: #f00;
+}

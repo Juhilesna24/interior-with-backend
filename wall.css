@@ -1,0 +1,76 @@
+
+
+.pnt #pp{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+background:#ccc;
+margin:0;
+padding:0;
+height:100vh;}
+
+.pnt #pp li{
+list-style:none;
+position:relative;
+width:20%;
+height:100%;
+border-right:1px solid #000;
+float:left;
+box-sizing:border-box;
+transition:0.5s;
+text-align:center;
+overflow:hidden;
+}
+
+.pnt #pp li:nth-child(1){
+background:url(wp1.jpg);
+background-size:cover;
+background-position:left;}
+
+.pnt #pp li:nth-child(2){
+background:url(wp2.jpg);
+background-size:cover;
+background-position:left;}
+
+.pnt #pp li:nth-child(3){
+background:url(wp3.jpg);
+background-size:cover;
+background-position:left;}
+
+.pnt #pp li:nth-child(4){
+background:url(wp4.jpg);
+background-size:cover;
+background-position:left;}
+
+.pnt #pp li:nth-child(5){
+background:url(wp5.jpg);
+background-size:cover;
+background-position:left;}
+
+
+
+.pnt #pp:hover li{
+width:10%;}
+
+.pnt #pp li:hover{
+width:60%;}
+
+.pnt #pp li .content{
+position:absolute;
+bottom:-100%;
+left:0;
+width:100%;
+background:rgba(0,0,0,.8);
+box-sizing:border-box;
+color:#fff;
+opacity:0;}
+
+.pnt #pp li:hover .content{
+bottom:0;
+transition:0.5s;
+transition-delay:0.5s;
+opacity:1;
+}
+
+

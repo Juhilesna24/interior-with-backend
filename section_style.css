@@ -1,0 +1,26 @@
+body{
+	margin:0;
+	padding:0;
+	font-family:verdana;
+	
+}
+#fullpage{
+height:100vh;
+}
+#fullpage section{
+}
+#fullpage section:nth-child(1)
+{background:yellow;
+}
+#fullpage section:nth-child(2)
+{background:orangrred;
+}
+#fullpage section:nth-child(3)
+{background:cyan;
+}
+#fullpage section:nth-child(4)
+{background:black;
+}
+#fullpage section:nth-child(5)
+{background:blue;
+}
